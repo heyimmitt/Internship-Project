@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: -10px;
+  display: block;
+}
+
+.submit-button {
+  margin-top: 20px;
+  background-color: #a1eafb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #8bdce9;
+}
