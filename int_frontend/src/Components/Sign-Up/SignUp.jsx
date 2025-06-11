@@ -3,7 +3,7 @@ import './SignUp.css'
 import { useForm } from 'react-hook-form'
 import { Box, Typography, TextField, InputAdornment, Button } from '@mui/material'
 import MailIcon from '@mui/icons-material/Mail';
-import Login from "../Login/Login";
+import SignIn from '../Login/Login';
 import { Icon } from '@iconify/react';
 
 export default function SignUp() {
@@ -17,7 +17,7 @@ export default function SignUp() {
     console.log('Form submitted: ', data)
   }
   const redirectToLogin = ()=>{
-    return <Login/>
+    return <SignIn/>
   }
 
   return (
@@ -28,7 +28,7 @@ export default function SignUp() {
         </Typography>
       </Box>
 
-      <form className='mx-auto mt-10 py-10 px-5 flex flex-col justify-center items-center gap-6 shadow-2xl' onSubmit={handleSubmit(onSubmit)}>
+      <form className='mt-10 mx-auto py-10 px-10 flex flex-col justify-center items-center gap-6 shadow-2xl' onSubmit={handleSubmit(onSubmit)}>
         <Box className='flex flex-col gap-1 items-center '>
           <TextField
             label="Username"
